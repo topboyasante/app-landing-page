@@ -30,6 +30,7 @@ function Reviews() {
         <SwiperSlide>{companyList[1]}</SwiperSlide>
         <SwiperSlide>{companyList[2]}</SwiperSlide>
         <SwiperSlide>{companyList[3]}</SwiperSlide>
+        <SwiperSlide>{companyList[4]}</SwiperSlide>
       </Swiper>
     </main>
   )
