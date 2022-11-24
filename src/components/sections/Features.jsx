@@ -5,7 +5,7 @@ import AppContext from '../../context/AppContext'
 function Features() {
   const {isDark} = useContext(AppContext)
   return (
-    <main className={isDark?'text-white max-w-[1240px] mx-auto p-5':'text-[#1f2937] max-w-[1240px] mx-auto p-5'}>
+    <main className={isDark?'text-white max-w-[1240px] mx-auto p-5 h-full flex flex-col items-center justify-center':'text-[#1f2937] max-w-[1240px] mx-auto p-5 h-full flex flex-col items-center justify-center'}>
            <div>
             <h1 className='mt-5'>"Business has boomed like never before."</h1>
             <p className="text-right text-xl mr-3 my-2">Brett Hand, Cognito Inc.</p>
@@ -20,25 +20,29 @@ function Features() {
                   and then suggests your business to them. This system has proven to be 100% effective and faster than traditional SEO methods,
                   and drives 2000% more traffic to businesses.
                 </p>
-                <section className='grid lg:grid-cols-3 place-items-center my-2'>
+                <section className='grid lg:grid-cols-3 place-items-center my-5 gap-[3em]'>
                     {/* Card */}
-                    <div className='lg:w-[300px] shadow-md'>
+                    <div className='lg:w-[400px] shadow-md'>
                         <img src={Chart} alt="chart" />
                         <p className="text-center py-3 text-lg">Business Growth with Lotus SEO</p>
                     </div>
 
-                    <div className='lg:w-[300px] shadow-md'>
+                    <div className='lg:w-[400px] shadow-md'>
                         <img src={Chart} alt="chart" />
                         <p className="text-center py-3 text-lg">Business Growth with Traditional SEO</p>
                     </div>
 
-                    <div className='lg:w-[300px] shadow-md'>
+                    <div className='lg:w-[400px] shadow-md'>
                         <img src={Chart} alt="chart" />
                         <p className="text-center py-3 text-lg">Business Growth with no SEO</p>
                     </div>
                 </section>
             </div>
           </section>
+          <br />
+          <button className={isDark?'bg-[#0a9396] text-white rounded-3xl p-[0.5em] w-[200px] hover:scale-105 ease duration-300 text-xl':'bg-blue-500 text-white rounded-3xl p-[0.5em] w-[200px] hover:scale-105 ease duration-300 text-xl'}>
+            Learn More
+          </button>
     </main>
   )
 }

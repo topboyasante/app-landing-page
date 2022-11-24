@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <main>
         {/* Large Screens */}
-        <nav className='fixed top-0 left-0 right-0 ml-auto mr-auto w-[50vw] items-center 
+        <nav className='fixed top-0 left-0 right-0 ml-auto mr-auto w-[55vw] items-center 
         my-5 p-3 rounded-[10em] justify-between bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg
         hidden lg:flex z-10'>
             {/* Left Section */}

@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
+import Footer from '../components/reusables/Footer'
 import Navbar from '../components/reusables/Navbar'
 import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
+import Reviews from '../components/sections/Reviews'
 import AppContext from '../context/AppContext'
 
 function Homepage() {
@@ -16,6 +18,14 @@ function Homepage() {
       {/* Features Section */}
       <section className={isDark?'bg-[#001119]':'bg-[#ffffff]'}>
         <Features/>
+      </section>
+      {/* Review Section */}
+      <section className={isDark?'bg-[#001119]':'bg-[#ffffff]'}>
+        <Reviews/>
+      </section>
+      {/* Footer */}
+      <section className={isDark?'bg-[#001119]':'bg-[#ffffff]'}>
+        <Footer/>
       </section>
     </main>
   )
