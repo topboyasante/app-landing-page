@@ -23,6 +23,10 @@ function Homepage() {
       <section className={isDark?'bg-[#001119]':'bg-[#ffffff]'}>
         <Reviews/>
       </section>
+      {/*  */}
+      <section>
+        
+      </section>
       {/* Footer */}
       <section className={isDark?'bg-[#001119]':'bg-[#ffffff]'}>
         <Footer/>

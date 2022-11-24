@@ -1,15 +1,16 @@
 import React,{useContext} from 'react'
 import Chart from '../../images/chart.jpg'
 import AppContext from '../../context/AppContext'
+import FeatureCard from '../reusables/FeatureCard'
 
 function Features() {
   const {isDark} = useContext(AppContext)
   return (
     <main className={isDark?'text-white max-w-[1240px] mx-auto p-5 h-full flex flex-col items-center justify-center':'text-[#1f2937] max-w-[1240px] mx-auto p-5 h-full flex flex-col items-center justify-center'}>
-           <div>
+          <div>
             <h1 className='mt-5'>"Business has boomed like never before."</h1>
             <p className="text-right text-xl mr-3 my-2">Brett Hand, Cognito Inc.</p>
-           </div>
+          </div>
            <br />
           <section>
             <div className="text-center">
@@ -38,6 +39,39 @@ function Features() {
                     </div>
                 </section>
             </div>
+          </section>
+          <br />
+          {/* Features */}
+          <section>
+            <h1 className="text-center">Why Lotus?</h1>
+            <p className='text-center my-2 text-xl'>Lotus is constantly growing, just like the possibilities at your hands.</p>
+            <br />
+                <section className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+                    <FeatureCard
+                    heading={`High SEO Speeds.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                    <FeatureCard
+                    heading={`5000% Business Boosts.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                    <FeatureCard
+                    heading={`Trusted Algorithms.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                    <FeatureCard
+                    heading={`24/7 Customer Support.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                    <FeatureCard
+                    heading={`24/7 Customer Support.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                    <FeatureCard
+                    heading={`24/7 Customer Support.`}
+                    description={`lorem ipsum dolor sit amet.`}
+                    />
+                </section>
           </section>
           <br />
           <button className={isDark?'bg-[#0a9396] text-white rounded-3xl p-[0.5em] w-[200px] hover:scale-105 ease duration-300 text-xl':'bg-blue-500 text-white rounded-3xl p-[0.5em] w-[200px] hover:scale-105 ease duration-300 text-xl'}>
